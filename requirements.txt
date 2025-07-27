@@ -1,0 +1,8 @@
+PyQt6
+transformers
+torch
+bitsandbytes
+peft
+trl
+datasets
+markdown
