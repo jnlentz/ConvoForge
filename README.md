@@ -1,36 +1,26 @@
 ConvoForge
-ConvoForge is a comprehensive desktop application for collecting, managing, and interacting with conversational AI data. Built with Python and PyQt6, it provides a complete environment for fine-tuning large language models (LLMs) by enabling robust data curation and direct model inference for comparative analysis.
+ConvoForge is a comprehensive desktop application for collecting, managing, and interacting with conversational AI data. Built with Python and PyQt6, it provides a complete local environment for fine-tuning large language models (LLMs) by enabling robust data curation and direct model inference for comparative analysis.
 
-This tool was designed for ML engineers and researchers who need a local, private, and efficient way to build high-quality datasets and test fine-tuned models.
+This tool was designed for ML engineers and researchers who need a private, efficient, and powerful way to build high-quality datasets and test fine-tuned models on their own hardware.
 
-<!-- It's highly recommended to add a screenshot of the app here -->
+Key Features
+Chat & Inference
+Load and interact with both base models and your own fine-tuned adapters. All chat sessions are automatically saved as new training data, creating a virtuous cycle of improvement.
 
-Features
+Data Collection
+Log conversations from various sources with detailed metadata. Features a live preview pane to see the conversation history as you add new turns.
+
+Data Management
+Filter your entire dataset by the source model and safely delete entire conversations with a confirmation dialog. A preview pane allows you to review a conversation before deleting it.
+
+Technical Details
 Tabbed Interface: A clean, multi-tab layout separating data collection, model interaction (chat), and data management.
-
-Structured Data Collection:
-
-Log conversations from various sources with detailed metadata (model name, summary, etc.).
-
-Live preview of conversation history as you add data.
-
-Auto-generate unique conversation IDs.
 
 Live Model Inference:
 
 Load and chat with different models, including base models and your own fine-tuned adapters (e.g., QLoRA).
 
-Automatically saves your chat sessions as new, high-quality training data.
-
 Supports multiline input (Shift+Enter) and renders model responses as markdown.
-
-Data Management:
-
-View high-level statistics about your dataset (conversation count, word count, etc.).
-
-Filter conversations by model.
-
-Safely delete entire conversations with a confirmation dialog.
 
 Efficient & Local:
 
@@ -50,7 +40,7 @@ Database: SQLite
 Setup
 Clone the repository:
 
-git clone https://github.com/your-username/ConvoForge.git
+git clone https://github.com/jnlentz/ConvoForge.git
 cd ConvoForge
 
 Create a Python virtual environment:
@@ -63,7 +53,7 @@ Install dependencies:
 pip install -r requirements.txt
 
 Hugging Face Login (Required for Gemma):
-The base model for this demo (google/gemma-2b-it) is a gated model. You must be logged into your Hugging Face account.
+The base model for this demo (google/gemma-2b-it) is a gated model. You must be logged into your Hugging Face account to download it.
 
 huggingface-cli login
 
