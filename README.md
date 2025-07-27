@@ -43,19 +43,23 @@ Clone the repository:
 git clone https://github.com/jnlentz/ConvoForge.git
 cd ConvoForge
 
+
 Create a Python virtual environment:
 
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
+
 Install dependencies:
 
 pip install -r requirements.txt
+
 
 Hugging Face Login (Required for Gemma):
 The base model for this demo (google/gemma-2b-it) is a gated model. You must be logged into your Hugging Face account to download it.
 
 huggingface-cli login
+
 
 Follow the prompts and paste your access token.
 
@@ -63,6 +67,7 @@ Usage
 Launch the application:
 
 python main.py
+
 
 Collect Data:
 
