@@ -1,6 +1,6 @@
 # ConvoForge
 
-ConvoForge is a comprehensive desktop application for collecting, managing, and interacting with conversational AI data. Built with Python and PyQt6, it provides a complete local environment for fine-tuning large language models (LLMs) by enabling robust data curation and direct model inference for comparative analysis.
+ConvoForge is a desktop application for collecting, managing, and interacting with conversational AI data. Built with Python and PyQt6, it provides a complete local environment for fine-tuning large language models (LLMs) by enabling robust data curation and direct model inference for comparative analysis.
 
 This tool was designed for ML engineers and researchers who need a private, efficient, and powerful way to build high-quality datasets and test fine-tuned models on their own hardware.
 
